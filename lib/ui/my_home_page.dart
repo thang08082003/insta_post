@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:insta/ui/home_page.dart'; // Import file InstagramPost (nếu cần)
+import 'package:insta/ui/home_page.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});

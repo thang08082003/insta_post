@@ -11,7 +11,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  List<String> profileImages = [
+  final List<String> profileImages = [
     "assets/images/avt1.png",
     "assets/images/avt2.png",
     "assets/images/avt3.png",
@@ -22,14 +22,25 @@ class _HomePageState extends State<HomePage> {
     "assets/images/avt8.png",
   ];
 
+  final List<Story> stories = [
+    const Story(profileImage: "assets/images/avt1.png", usernames: ["user1"]),
+    const Story(profileImage: "assets/images/avt2.png", usernames: ["user2"]),
+    const Story(profileImage: "assets/images/avt3.png", usernames: ["user3"]),
+    const Story(profileImage: "assets/images/avt4.png", usernames: ["user4"]),
+    const Story(profileImage: "assets/images/avt5.png", usernames: ["user5"]),
+    const Story(profileImage: "assets/images/avt6.png", usernames: ["user6"]),
+    const Story(profileImage: "assets/images/avt7.png", usernames: ["user7"]),
+    const Story(profileImage: "assets/images/avt8.png", usernames: ["user8"])
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(),
+      appBar: const HomeAppBar(),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            StoryList(profileImages: profileImages),
+            StoryList(profileImages: profileImages, stories: stories),
             PostList(profileImages: profileImages),
           ],
         ),

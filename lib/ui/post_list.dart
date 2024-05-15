@@ -20,7 +20,7 @@ class PostList extends StatelessWidget {
                   child: CircleAvatar(
                     radius: 15,
                     backgroundImage: const AssetImage(
-                      "assets/images/stories.png",
+                      "assets/images/plus.png",
                     ),
                     child: CircleAvatar(
                       radius: 12,
@@ -49,8 +49,8 @@ class PostList extends StatelessWidget {
               child: Image.asset(
                 profileImages[index],
                 fit: BoxFit.cover,
-                height: 200,
-                width: 200,
+                height: 420,
+                width: 450,
               ),
             ),
             Row(
