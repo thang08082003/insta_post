@@ -19,7 +19,7 @@ class StoryWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: SizedBox(
-        height: 100.0, // Adjusted height to accommodate the avatars and text
+        height: 100.0,
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemCount: story.length,
@@ -57,12 +57,10 @@ class StoryWidget extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: 4.0), // Space between avatar and text
+          const SizedBox(height: 4.0),
           Text(
             story[index]["name"]!,
-            style: const TextStyle(
-                fontSize: 12.0,
-                fontWeight: FontWeight.bold), // Adjust text size as needed
+            style: const TextStyle(fontSize: 12.0, fontWeight: FontWeight.bold),
           ),
         ],
       ),
